@@ -19,7 +19,7 @@ class Occation(models.Model):
 class All_cakes(models.Model):
     name = models.CharField( max_length=500)
     occation = models.ForeignKey(Occation, on_delete=models.CASCADE)
-    image = models.ImageField( upload_to='./media',)
+    image = models.ImageField( upload_to='./media',blank=True,null=True)
     price = models.IntegerField()
 
     def __str__(self):
