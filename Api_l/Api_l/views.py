@@ -8,8 +8,6 @@ def home_api(request):
         <div style='display:flex;flex-direction:column'>
         <a href='/cakeg/cakes' >CakeG > cakesapi </a> 
         <a href='/cakeg/occation' > CakeG > occation </a>
-        <a href='/cakeg/addcake' > CakeG add-cake </a>
-        <a href='/cakeg/addoccation'> CakeG add-occation </a>
         </div>
     """
     return HttpResponse(whole_body)
